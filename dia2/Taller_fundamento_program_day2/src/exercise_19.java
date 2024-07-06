@@ -12,7 +12,18 @@ public class exercise_19 {
         System.out.println("Enter your day of birth");
         int dayOfBirth = scanner.nextInt();
         scanner.close();
-        int age= 2024-yearOfBirth;
+        int year=2024;
+        int month=7;
+        int day= 5;
+
+        int age= year-yearOfBirth;
+
+        if (month<monthOfBirth || month==monthOfBirth && day<dayOfBirth){
+            --age;
+        }
+
+        System.out.println(age);
+
         if(age>=18){
             System.out.println("you are "+age+" years old and of legal age");
         }else{
