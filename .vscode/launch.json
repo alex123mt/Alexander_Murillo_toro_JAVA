@@ -1,0 +1,154 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "exercise_17",
+            "request": "launch",
+            "mainClass": "exercise_17",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_19",
+            "request": "launch",
+            "mainClass": "exercise_19",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_16",
+            "request": "launch",
+            "mainClass": "exercise_16",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_15",
+            "request": "launch",
+            "mainClass": "exercise_15",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_14",
+            "request": "launch",
+            "mainClass": "exercise_14",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_13",
+            "request": "launch",
+            "mainClass": "exercise_13",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_12",
+            "request": "launch",
+            "mainClass": "exercise_12",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_11",
+            "request": "launch",
+            "mainClass": "exercise_11",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_10",
+            "request": "launch",
+            "mainClass": "exercise_10",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_9",
+            "request": "launch",
+            "mainClass": "exercise_9",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_8",
+            "request": "launch",
+            "mainClass": "exercise_8",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_7",
+            "request": "launch",
+            "mainClass": "exercise_7",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_6",
+            "request": "launch",
+            "mainClass": "exercise_6",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_5",
+            "request": "launch",
+            "mainClass": "exercise_5",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_4",
+            "request": "launch",
+            "mainClass": "exercise_4",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_3",
+            "request": "launch",
+            "mainClass": "exercise_3",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_2",
+            "request": "launch",
+            "mainClass": "exercise_2",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "exercise_1",
+            "request": "launch",
+            "mainClass": "exercise_1",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "JAVA_67f09f3d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "JAVA_67f09f3d"
+        }
+    ]
+}
