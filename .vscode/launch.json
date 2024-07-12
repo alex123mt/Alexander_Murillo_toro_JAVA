@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "exercise_8",
+            "request": "launch",
+            "mainClass": "exercise_8",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "Sorting",
+            "request": "launch",
+            "mainClass": "Sorting",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_9",
+            "request": "launch",
+            "mainClass": "exercise_9",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_5",
+            "request": "launch",
+            "mainClass": "taller_4.exercise_5",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_4",
+            "request": "launch",
+            "mainClass": "taller_4.exercise_4",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_3",
+            "request": "launch",
+            "mainClass": "taller_4.exercise_3",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_2",
+            "request": "launch",
+            "mainClass": "taller_4.exercise_2",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_1",
+            "request": "launch",
+            "mainClass": "taller_4.exercise_1",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_7",
+            "request": "launch",
+            "mainClass": "exercise_7",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "RemoveRepeatedWords",
+            "request": "launch",
+            "mainClass": "RemoveRepeatedWords",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_6",
+            "request": "launch",
+            "mainClass": "exercise_6",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "exercise_5",
+            "request": "launch",
+            "mainClass": "exercise_5",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
+            "name": "PiramideAsteriscos",
+            "request": "launch",
+            "mainClass": "PiramideAsteriscos",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
             "name": "exercise_4",
             "request": "launch",
             "mainClass": "exercise_4",

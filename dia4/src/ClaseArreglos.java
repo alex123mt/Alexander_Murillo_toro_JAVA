@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class ClaseArreglos {
     public static void main(String[] args) throws Exception {
 
         //arrglos o listas
@@ -10,6 +10,7 @@ public class App {
         
         String[] personas= {"ana","carlos","maria"};
         int[] numeros = new int[3];
+        System.out.println(personas);
 
         Scanner scanner= new Scanner(System.in);
         System.out.println("ingrese 3 numeros ");
@@ -57,7 +58,7 @@ public class App {
         }
 
 
-
+        scanner.close();
 
     }
 }
