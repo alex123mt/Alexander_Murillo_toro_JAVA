@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "exercise_10",
+            "request": "launch",
+            "mainClass": "exercise_10",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
             "name": "exercise_8",
             "request": "launch",
             "mainClass": "exercise_8",
