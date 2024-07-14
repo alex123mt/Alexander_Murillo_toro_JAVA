@@ -1,4 +1,4 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.Scanner;
 
 public class TAllerdeMotosycarros {
@@ -7,7 +7,6 @@ public class TAllerdeMotosycarros {
 
         int maxEmployees = 0;
         String[][][] array=null;
-        String[] detallesVehiculo=new String[4];
         
 
         System.out.println("ingrese 1 para hacer registro, 2 para mostrar los vehiculo,3 para ver cuantos vehiculos hay en cada estado, 4 buscar vehiculo, 5 actualizar estado de vehiculo y 6 para salir ");
@@ -16,7 +15,7 @@ public class TAllerdeMotosycarros {
         do {
             switch (opcion) {
                 case 1:
-                    System.out.println("ingrese la capacidad maxima del taller");
+                    System.out.println("Ingrese la capacidad maxima del taller");
                     maxEmployees= scanner.nextInt();
                     System.out.println("Ingrese el número de trabajos a registrar:");
                     int numTregistrar= scanner.nextInt();
@@ -32,28 +31,33 @@ public class TAllerdeMotosycarros {
                             String tipoVehiculo= scanner.nextLine();
 
                             System.out.println("Ingrese la marca:");
-                            detallesVehiculo[0]= scanner.nextLine();
+                            String marca= scanner.nextLine();
                                         
                             System.out.println("Ingrese el modelo:");
-                            detallesVehiculo[1]= scanner.nextLine();
+                            String modelo= scanner.nextLine();
 
                             System.out.println("Ingrese el año:");
-                            detallesVehiculo[2]= scanner.nextLine();
+                            String año= scanner.nextLine();
 
                             System.out.println("Ingrese el estado:");
-                            detallesVehiculo[3]= scanner.nextLine();
+                            String estado= scanner.nextLine();
+
+                            System.out.println("Ingrese la placa del vehiculo:");
+                            String placa= scanner.nextLine();
+                            
 
                             array[i] = new String[][] {
                                 {nomEmpleado},
                                 {tipoVehiculo},
-                                {Arrays.toString(detallesVehiculo)}
+                                {marca,modelo,año,estado,placa}
                             };
+
                         }
                     }else{
                         System.out.println("La capacidad del taller es insuficiente");
                     }
 
-                    System.out.println(Arrays.deepToString(array));
+                    // System.out.println(Arrays.deepToString(array));
 
                     System.out.println("ingrese 1 para hacer registro, 2 para mostrar los vehiculo,3 para ver cuantos vehiculos hay en cada estado, 4 buscar vehiculo, 5 actualizar estado de vehiculo y 6 para salir ");
                     opcion= scanner.nextInt();
@@ -61,12 +65,15 @@ public class TAllerdeMotosycarros {
 
                 case 2:
                 if (array != null) {
-                    System.out.println("| Tipo   | Marca   | Modelo   | Año   | Estado      |");
-                    System.out.println("|--------|---------|----------|-------|-------------|");
+                    System.out.println("| Nombre | Tipo   | Marca   | Modelo   | Año   | Estado    | Placa  |");
+                    System.out.println("|--------|--------|---------|----------|-------|-----------|--------|");
                     for (int i = 0; i < array.length; i++) {
-                        String[] detallesEmpleado = array[i][2][0].replace("[", "").replace("]", "").split(", ");
-                        System.out.println(String.format("| %-6s | %-7s | %-8s | %-5s | %-11s |", 
-                                array[i][1][0], detallesEmpleado[0].trim(), detallesEmpleado[1].trim(), detallesEmpleado[2].trim(), detallesEmpleado[3].trim()));
+                        for (int j = 0; j < array[i].length; j++) {
+                            for (int l = 0; l < array[i][j].length; l++) {
+                                System.out.print(array[i][j][l] + "| ");
+                            }
+                        }
+                        System.out.println(); 
                     }
                 } else {
                     System.out.println("No hay datos registrados");
@@ -82,41 +89,104 @@ public class TAllerdeMotosycarros {
                     int contV=0;
 
 
-                    for (int i = 0; i < detallesVehiculo.length; i++) {
-                        String estado= detallesVehiculo[i].toLowerCase();
-                        if (estado.equalsIgnoreCase("pendiente")) {
-                            contP++;
-                        }if(estado.equalsIgnoreCase("reparado")) {
-                            contR++;
-                        }if(estado.equalsIgnoreCase("vendido")){
-                            contV++;
+                    for (int i = 0; i < array.length; i++) {
+                        for (int j = 0; j < array[i].length; j++) {
+                            for (int k = 0; k < array[i][j].length; k++) {
+                                if (array[i][j][k] != null) {
+                                    String estado = array[i][j][k].toLowerCase();
+                                    if (estado.equalsIgnoreCase("pendiente")) {
+                                        contP += 1;
+                                    } else if (estado.equalsIgnoreCase("reparado")) {
+                                        contR += 1;
+                                    } else if (estado.equalsIgnoreCase("vendido")) {
+                                        contV += 1;
+                                    }
+                                }
+                            }
                         }
                     }
+                    
 
-                    System.out.println("Hay "+contP+" en estado pendiente");
-                    System.out.println("Hay "+contR+" en estado reparado");
-                    System.out.println("Hay "+contV+" en estado vendido");
+                    System.out.println("Hay "+contP+" vehiculo(s) en estado Pendiente");
+                    System.out.println("Hay "+contR+" vehiculo(s) en estado Reparado");
+                    System.out.println("Hay "+contV+" vehiculo(s) en estado Vendido");
 
                     System.out.println("ingrese 1 para hacer registro, 2 para mostrar los vehiculo,3 para ver cuantos vehiculos hay en cada estado, 4 buscar vehiculo, 5 actualizar estado de vehiculo y 6 para salir ");
                     opcion= scanner.nextInt();
                     break;
 
                 case 4:
+                    scanner.nextLine();
+                
+                    System.out.println("Ingrese la marca: ");
+                    String marcaBuscar = scanner.nextLine().toLowerCase();
+                
+                    System.out.println("Ingrese el modelo: ");
+                    String modeloBuscar = scanner.nextLine().toLowerCase();
 
-                    
-
-
-                    System.out.println("ingrese 1 para hacer registro, 2 para mostrar los vehiculo,3 para ver cuantos vehiculos hay en cada estado, 4 buscar vehiculo, 5 actualizar estado de vehiculo y 6 para salir ");
-                    opcion= scanner.nextInt();
+                    System.out.println("Ingrese la placa: ");
+                    String placaBuscar = scanner.nextLine().toLowerCase();
+                
+                    boolean encontrado = false;
+                
+                    for (int i = 0; i < array.length; i++) {
+                        if (array[i][2][0].toLowerCase().equalsIgnoreCase(marcaBuscar) && array[i][2][1].toLowerCase().equalsIgnoreCase(modeloBuscar) && array[i][2][4].equalsIgnoreCase(placaBuscar)) {
+                            encontrado = true;
+                            System.out.println("Vehículo encontrado =>");
+                            System.out.println("Empleado: " + array[i][0][0]);
+                            System.out.println("Tipo de vehículo: " + array[i][1][0]);
+                            System.out.println("Marca: " + array[i][2][0]);
+                            System.out.println("Modelo: " + array[i][2][1]);
+                            System.out.println("Año: " + array[i][2][2]);
+                            System.out.println("Estado: " + array[i][2][3]);
+                            System.out.println("Placa: " + array[i][2][4]);
+                            break;
+                        }
+                    }
+                
+                    if (!encontrado) {
+                        System.out.println("Vehículo no encontrado.");
+                    }
+                
+                    System.out.println("Ingrese 1 para hacer registro, 2 para mostrar los vehículos, 3 para ver cuántos vehículos hay en cada estado, 4 buscar vehículo, 5 actualizar estado de vehículo y 6 para salir");
+                    opcion = scanner.nextInt();
                     break;
+                
 
                 case 5:
+                    scanner.nextLine(); 
+                
+                    System.out.println("Ingrese nombre del empleado:");
+                    String nombreEmpleado = scanner.nextLine().toLowerCase();
+                
+                    System.out.println("Ingrese la marca:");
+                    String marcaActualizar = scanner.nextLine().toLowerCase();
 
-                    
-                    
-                    System.out.println("ingrese 1 para hacer registro, 2 para mostrar los vehiculo,3 para ver cuantos vehiculos hay en cada estado, 4 buscar vehiculo, 5 actualizar estado de vehiculo y 6 para salir ");
-                    opcion= scanner.nextInt();
+                    System.out.println("Ingrese la placa");
+                    String placaActualizar=scanner.nextLine().toLowerCase();
+                
+                    System.out.println("Ingrese el estado a cambiar (pendiente, reparado, vendido):");
+                    String estadoActualizar = scanner.nextLine().toLowerCase();
+                
+                    boolean encontrado2 = false;
+                
+                    for (int i = 0; i < array.length; i++) {
+                        if (array[i][0][0].equalsIgnoreCase(nombreEmpleado) && array[i][2][0].equalsIgnoreCase(marcaActualizar) && array[i][2][4].equalsIgnoreCase(placaActualizar)) {
+                            encontrado2 = true;
+                            array[i][2][3] = estadoActualizar;
+                            System.out.println("**** Estado actualizado correctamente ****");
+                            break;
+                        }
+                    }
+                
+                    if (!encontrado2) {
+                        System.out.println("Vehículo no encontrado para actualizar estado.");
+                    }
+                
+                    System.out.println("Ingrese 1 para hacer registro, 2 para mostrar los vehículos, 3 para ver cuántos vehículos hay en cada estado, 4 buscar vehículo, 5 actualizar estado de vehículo y 6 para salir");
+                    opcion = scanner.nextInt();
                     break;
+                
             
                 default:
                     System.out.println("opcion no valida");

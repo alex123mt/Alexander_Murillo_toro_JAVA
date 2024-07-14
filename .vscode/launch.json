@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "intento2",
+            "request": "launch",
+            "mainClass": "intento2",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
             "name": "TallerDeMotosYCarros",
             "request": "launch",
             "mainClass": "TallerDeMotosYCarros",
