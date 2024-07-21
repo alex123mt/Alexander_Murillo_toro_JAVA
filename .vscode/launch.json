@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Alexander_Murillo_toro_JAVA_3fdee8e6"
+        },
+        {
+            "type": "java",
             "name": "intento2",
             "request": "launch",
             "mainClass": "intento2",
